@@ -15,4 +15,4 @@ echo "The address of the active validator: $validator"
 
 # Delegate the tokens to the first active validator
 echo "Delegating $amount penumbra tokens to $validator"
-pcli tx delegate "${amount}penumbra" --to "$validator"
+#pcli tx delegate "${amount}penumbra" --to "$validator"
