@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=$(pcli -V | awk '{ print $NF }')
+version=$(pcli -V | cut -d ' ' -f 2)
 echo $version
 
 
