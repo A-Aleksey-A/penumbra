@@ -18,5 +18,5 @@ echo $current_balance
 echo $stake_balance
 
 # Стейкает монетки первому активному валидатору из списка
-#stake=$(pcli tx delegate "${stake_balance}"penumbra --to $validator)
-#echo $stake
+stake=$(pcli tx delegate "${stake_balance}"penumbra --to $validator)
+echo $stake
