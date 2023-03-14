@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=$(pcli -V | awk '{ print $2 }')
+version=$(pcli -V | awk '{ print $2 }') &>/dev/null
 echo "Текущая версия Penumbra: $version"
 
 echo "-----------------------------------------------------------------------------"
