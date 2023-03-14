@@ -9,9 +9,9 @@ echo "Проверяем баланс..."
 current_balance=$(pcli view balance | grep penumbra | awk '{ print $2 }' | tr -d 'penumbra' | head -1) &>/dev/null
 sleep 15
 echo "-----------------------------------------------------------------------------"
-if [ $current_balance -le 1500 ]; then
+if [ $current_balance -le 10 ]; then
   echo "Недостаточный баланс. Запросите токены с крана!"
-elif [ $current_balance -gt 1500 ]; then
+elif [ $current_balance -gt 10 ]; then
   echo "Подготавливаем токены к делегированию..."
   dif=10
   delegate_balance=$(($current_balance-$dif))
