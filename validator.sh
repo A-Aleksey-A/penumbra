@@ -1,6 +1,6 @@
 #!/bin/bash
 
 version=$(pcli -V | cut -d ' ' -f 2)
-echo $version
+echo "Текущая версия Penumbra: $version"
 
 
