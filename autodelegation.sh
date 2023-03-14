@@ -19,11 +19,11 @@ elif [ $current_balance -gt 10 ]; then
   sleep 15
   echo "-----------------------------------------------------------------------------"
   echo "Ищем подходящего валидатора..."
-  delegate=$(pcli tx delegate "${delegate_balance}"penumbra --to $validator) &>/dev/null
+#  delegate=$(pcli tx delegate "${delegate_balance}"penumbra --to $validator) &>/dev/null
   sleep 15
   echo "-----------------------------------------------------------------------------"
   echo "Делегируем токены валидатору..."
-  echo $delegate
+#  echo $delegate
   echo "-----------------------------------------------------------------------------"
   echo "Обновление и делегация выполнены:"
   echo "Текущая версия: $version"
